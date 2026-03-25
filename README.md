@@ -34,3 +34,34 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# 🎙️ Captain Awesome's Voice AI Agent
+
+An immersive, privacy-focused AI assistant built with **Next.js**, **Web Speech API**, and **Ollama (Llama 3.2)**.
+
+## 🚀 The Mission
+Build a modular voice agent that listens, thinks, and speaks—all while bypassing cloud quotas by utilizing a **Local-First LLM Architecture**.
+
+## 🧠 Architecture: The Flow
+1. **User Speaks:** Captured via the browser's `Web Speech API` (STT).
+2. **Local Processing:** The text is sent to a local **Ollama** server running `llama3.2:1b`.
+3. **Conversation Memory:** The agent utilizes a persistent state object to remember context (e.g., it knows I am Captain Awesome!).
+4. **Voice Output:** The response is spoken back using the `SpeechSynthesis API` (TTS).
+
+## 🛠️ Modular Service Structure
+- `lib/services/stt.ts`: Handles microphone input and speech-to-text.
+- `lib/services/tts.ts`: Handles text-to-speech output.
+- `lib/services/agent.ts`: Orchestrates requests to the local Ollama instance.
+- `lib/hooks/useVoiceAgent.ts`: The "Brain" hook that manages the logic flow.
+
+## ⚙️ How to Run Locally
+1. Clone the repo: `git clone https://github.com/Lareciyo/voice-ai-agent.git`
+2. Install dependencies: `npm install`
+3. **Install Ollama:** [Download here](https://ollama.com/)
+4. **Pull the Brain:** Run `ollama run llama3.2:1b` in your terminal.
+5. Start the engine: `npm run dev`
+6. Open `localhost:3000` and start talking!
+
+## 🛡️ Privacy Features
+- No cloud API keys required.
+- All conversation data stays on the local machine.
+- Zero-quota, unlimited throughput for 24/7 PHW.
