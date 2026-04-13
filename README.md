@@ -1,3 +1,19 @@
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Ollama](https://img.shields.io/badge/LLM-Ollama-orange)
+![Next.js](https://img.shields.io/badge/Framework-Next.js%2014-black)
+
+# 🎙️ Captain Awesome's Voice AI Agent
+... (rest of your current content) ...
+
+## 💻 Code Example
+To interact with the agent logic directly in your code:
+```typescript
+import { getAgentResponse } from '@/lib/services/agent';
+
+const answer = await getAgentResponse("Who is the captain?");
+console.log(answer); // "You are, Captain Awesome!"
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
