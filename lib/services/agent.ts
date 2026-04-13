@@ -37,3 +37,5 @@ export const getAgentResponse = async (userText: string): Promise<string> => {
     return "Captain! My local brain is offline. Please make sure the Ollama app is running in your taskbar.";
   }
 };
+
+//Final PR Check
